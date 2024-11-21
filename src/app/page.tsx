@@ -1,101 +1,73 @@
+'use client'
 import Image from "next/image";
+import home from '@/assets/home.png'
+import man from '@/assets/man.png'
+import HighlightText from "@/components/HighlightText";
+import { IoCall } from "react-icons/io5";
+import { useRouter } from "next/navigation";
+import FeatureCard from "@/components/Home Page/FeatureCard";
+import { featureData } from "@/data";
 
 export default function Home() {
+  const router = useRouter();
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
+    <div className="max-w-screen min-h-screen container mx-auto overflow-x-hidden">
+      {/* Hero Section */}
+      <div className="relative">
         <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
+          src={home}
+          alt="Home"
+          className="min-w-screen w-full h-full object-cover mt-1 z-[-50]"
         />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+        <Image
+          src={man}
+          alt="Man"
+          className="absolute z-[50] top-0 h-full w-32 md:w-80"
+        />
+        <div className="absolute right-2 sm:right-16 md:right-10 bottom-2 sm:bottom-20 md:bottom-12 z-[50] text-left">
+          <p className="text-lg sm:text-5xl md:text-6xl text-black font-bold">
+            A <HighlightText text="Trip Planner" />
+            <br /> for everyone...
+          </p>
+          <p className="text-[#242424] text-xs sm:text-xl md:text-2xl mt-2">
+            Create your itinerary and map your next trip <br />
+            in a free travel app for vacation planning <br />
+            & road trips, powered by AI and Google Maps.
+          </p>
+          <div className="w-full sm:w-9/12 mt-5 flex flex-wrap gap-4 justify-start items-center">
+            <button
+              className="bg-[#E88DEA] px-4 py-2 sm:px-6 sm:py-3 rounded-xl sm:rounded-2xl text-xs sm:text-xl"
+              onClick={() => router.push('/sign-in')}
+            >
+              Get Started
+            </button>
+            <button
+              className="bg-[#FBE2FB] text-[#E88DEA] px-4 py-2 sm:px-6 sm:py-3 rounded-xl sm:rounded-2xl font-bold text-xs sm:text-xl flex justify-center items-center gap-2"
+              onClick={() => router.push('/contact-us')}
+            >
+              <IoCall />
+              Contact
+            </button>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+      </div>
+      {/* Feature Section  */}
+      <div className="max-w-screen container mx-auto p-4 overflow-x-hidden mt-4">
+        <h2 className="text-lg md:text-4xl font-semibold text-center mb-4">
+          <HighlightText text="Features" /> to replace all your other tools
+        </h2>
+        <div className='bg-[#E88DEA] w-[10%] h-0.5 mx-auto md:mb-4'></div>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-1 md:gap-4 justify-center md:p-4 w-11/12 mx-auto">
+          {featureData.map((card, index) => (
+            <FeatureCard
+              key={index} // Using index as key since the card data is static
+              title={card.title}
+              description={card.description}
+              imageUrl={card.imageUrl}
+            />
+          ))}
+        </div>
+      </div>
     </div>
   );
 }

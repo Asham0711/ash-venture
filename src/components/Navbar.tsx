@@ -55,8 +55,9 @@ const Navbar = () => {
                 </button>
                 
                 <Button
-                    borderRadius="3rem"
+                    borderRadius="1.75rem"
                     className="bg-white dark:bg-[#E88DEA] text-black dark:text-white border-neutral-200 dark:border-slate-800"
+                    onClick={()=> router.push('/sign-up')}
                 >
                     Signup
                 </Button>
