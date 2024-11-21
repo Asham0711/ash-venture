@@ -4,7 +4,6 @@ import logo from '@/assets/logo_full.png'
 import Image from 'next/image'
 import Link from 'next/link'
 import { usePathname, useRouter } from 'next/navigation'
-import { Button } from './ui/moving-border'
 
 const navLink = [
     {
@@ -54,13 +53,12 @@ const Navbar = () => {
                     Login
                 </button>
                 
-                <Button
-                    borderRadius="1.75rem"
-                    className="bg-white dark:bg-[#E88DEA] text-black dark:text-white border-neutral-200 dark:border-slate-800"
-                    onClick={()=> router.push('/sign-up')}
+                <button 
+                    className="bg-[#E88DEA] px-3 py-1 rounded-xl"
+                    onClick={() => router.push('/sign-in')}
                 >
                     Signup
-                </Button>
+                </button>
                 
             </div>
         </div>

@@ -6,7 +6,10 @@ import HighlightText from "@/components/HighlightText";
 import { IoCall } from "react-icons/io5";
 import { useRouter } from "next/navigation";
 import FeatureCard from "@/components/Home Page/FeatureCard";
-import { featureData } from "@/data";
+import { destinationData, featureData, homeLastData } from "@/data";
+import { InfiniteMovingCards } from "@/components/ui/infinite-moving-cards";
+import { Button } from "@/components/ui/moving-border";
+import LastCard from "@/components/Home Page/LastCard";
 
 export default function Home() {
   const router = useRouter();
@@ -60,6 +63,48 @@ export default function Home() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-1 md:gap-4 justify-center md:p-4 w-11/12 mx-auto">
           {featureData.map((card, index) => (
             <FeatureCard
+              key={index} // Using index as key since the card data is static
+              title={card.title}
+              description={card.description}
+              imageUrl={card.imageUrl}
+            />
+          ))}
+        </div>
+      </div>
+      {/* Destination Section  */}
+      <div className="max-w-screen container mx-auto p-4 overflow-x-hidden mt-4 bg-[#343E4E]">
+        <h2 className="text-lg md:text-4xl font-semibold text-center my-5">
+          Discover your next <HighlightText text="Favourite Destination" />
+        </h2>
+        <div className='bg-[#E88DEA] w-[10%] h-0.5 mx-auto mb-5'></div>
+        <p className="md:w-9/12 mx-auto text-center text-xs md:text-xl">From breathtaking landscapes to vibrant cities, let us guide you to unforgettable destinations. Discover, plan, and explore your next favorite spot with personalized itineraries crafted just for you.</p>
+        <div className="py-10 rounded-md flex flex-col items-center justify-center relative overflow-hidden">
+          <InfiniteMovingCards
+            items={destinationData}
+            direction="right"
+            speed="slow"
+          />
+        </div>
+        <p className="md:w-9/12 mx-auto text-center text-xs md:text-xl">Ready to turn your dream destinations into reality? Dive into expertly curated itineraries and start planning the journey of a lifetime.</p>
+        <div className="flex justify-center items-center my-5">
+          <Button
+            borderRadius="1.75rem"
+            className="bg-white dark:bg-[#E88DEA] text-black dark:text-white border-neutral-200 dark:border-slate-800 text-lg"
+            onClick={()=> router.push('/sign-up')}
+          >
+            Explore More
+          </Button>
+        </div>       
+      </div>
+      {/* Last Section */}
+      <div className="max-w-screen container mx-auto p-4 overflow-x-hidden mt-4">
+        <h2 className="text-lg md:text-4xl font-semibold text-center mb-4">
+          For every kind of trip and every <HighlightText text="destination" />
+        </h2>
+        <div className='bg-[#E88DEA] w-[10%] h-0.5 mx-auto mb-5'></div>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-1 md:gap-4 justify-center md:p-4 w-11/12 mx-auto">
+          {homeLastData.map((card, index) => (
+            <LastCard
               key={index} // Using index as key since the card data is static
               title={card.title}
               description={card.description}

@@ -11,9 +11,9 @@ interface CardProps {
 
 const FeatureCard: React.FC<CardProps> = ({ title, description, imageUrl }) => {
   return (
-    <div className=" text-white rounded-lg shadow-lg p-2 md:p-4 w-full sm:w-80 flex flex-col items-center">
+    <div className=" text-white rounded-lg shadow-lg p-2 md:p-4 w-full sm:w-80 flex flex-col items-center hover:scale-110 transition-all duration-300">
       {/* Image */}
-      <div className="w-32 h-32 mb-4">
+      <div className="w-72 h-32 mb-4">
         <Image
           src={imageUrl}
           alt={title}
@@ -24,7 +24,7 @@ const FeatureCard: React.FC<CardProps> = ({ title, description, imageUrl }) => {
       </div>
 
       {/* Title */}
-      <h2 className="text-xl font-bold text-[#D79AD9] mb-2 text-center">
+      <h2 className="text-xl font-bold text-[#E88DEA] mb-2 text-center">
         {title}
       </h2>
 
