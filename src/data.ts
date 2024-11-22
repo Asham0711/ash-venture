@@ -117,3 +117,36 @@ export const homeLastData = [
         imageUrl: last3,
     },
 ]
+
+export const missionData = [
+    {
+        title:'Authenticity',
+        description:'We value genuine experiences, helping users discover destinations beyond the usual tourist spots for a deeper connection to local cultures.',
+        link:'/about-us'
+    },
+    {
+        title:'User-Centric Design',
+        description:'We prioritize user experience by creating a platform that’s intuitive, accessible, and tailored to each traveler’s unique needs.',
+        link:'/about-us'
+    },
+    {
+        title:'Innovation',
+        description:'We continually explore new technologies to simplify travel planning, making it engaging, flexible, and adaptable to future travel trends.',
+        link:'/about-us'
+    },
+    {
+        title:'Empowerment',
+        description:'We empower travelers with tools to plan confidently, make informed choices, and customize journeys that align with their personal interests.',
+        link:'/about-us'
+    },
+    {
+        title:'Sustainability',
+        description:'We support eco-friendly travel by promoting sustainable destinations and practices that respect the planet and local communities.',
+        link:'/about-us'
+    },
+    {
+        title:'Exploration',
+        description:'Fostering a sense of wonder and inspiring curiosity, our mission is to ignite a passion for discovering, exploring, and embracing new destinations worldwide.',
+        link:'/about-us'
+    }
+]
