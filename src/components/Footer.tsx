@@ -3,6 +3,7 @@ import React from 'react'
 import blackLogo from '@/assets/logo_black.png'
 import Link from 'next/link'
 import { FaInstagram, FaLinkedin, FaTwitter } from 'react-icons/fa'
+import FlipIcon from './ui/icon-flip'
 
 const Footer = () => {
   return (
@@ -61,15 +62,15 @@ const Footer = () => {
                 </ul>
             </div>
         </div>
-        <div className='flex gap-5 text-2xl'>
-            <Link href={'#'} className='hover:scale-110 transition-all duration-300'>
-                <FaTwitter />
+        <div className="flex space-x-4 items-center justify-center">
+            <Link href={'#'}>
+                <FlipIcon icon={<FaTwitter size={30} />} />
             </Link>
-            <Link href={'#'} className='hover:scale-110 transition-all duration-300'>
-                <FaInstagram />
+            <Link href={'#'}>
+                <FlipIcon icon={<FaInstagram size={30} />} />
             </Link>
-            <Link href={'#'} className='hover:scale-110 transition-all duration-300'>
-                <FaLinkedin />
+            <Link href={'#'}>
+                <FlipIcon icon={<FaLinkedin size={30} />} />
             </Link>
         </div>
         <div className='bg-[#000000] w-[90%] h-0.5 mx-auto'></div>

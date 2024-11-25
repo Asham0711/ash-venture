@@ -32,7 +32,7 @@ export default function Home() {
             A <HighlightText text="Trip Planner" />
             <br /> for everyone...
           </p>
-          <p className="text-[#242424] text-xs sm:text-xl md:text-2xl mt-2">
+          <p className="text-[#2d2d2d] text-xs sm:text-xl md:text-2xl mt-2">
             Create your itinerary and map your next trip <br />
             in a free travel app for vacation planning <br />
             & road trips, powered by AI and Google Maps.
