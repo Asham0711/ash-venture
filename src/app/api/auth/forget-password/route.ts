@@ -8,14 +8,15 @@ export async function POST(request: NextRequest){
     await connectDB();
     try {
         const { email } = await request.json();
+
         const existingUser = await User.findOne({email});
-        if(existingUser){
+        if(!existingUser){
             return NextResponse.json(
                 {
                     success:false,
-                    message:"User Already exist"
+                    message:"User not found. Sign up first"
                 },
-                {status: 401}
+                {status: 404}
             )
         }
 
@@ -28,7 +29,7 @@ export async function POST(request: NextRequest){
         const otpBody = await OTP.create({
             email, 
             otp, 
-            context: "signup"
+            context: "reset"
         });
 
         console.log("OTP Body", otpBody);

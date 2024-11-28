@@ -1,26 +1,25 @@
 import connectDB from "@/lib/database";
-import User from "@/models/user.model";
-import { NextRequest, NextResponse } from "next/server";
-import bcrypt from 'bcryptjs';
 import OTP from "@/models/otp.model";
+import User from "@/models/user.model";
+import bcrypt from 'bcryptjs';
+import { NextRequest, NextResponse } from "next/server";
 
 export async function POST(request: NextRequest){
     await connectDB();
     try {
-        const { name, email, password, confirmPassword, otp } = await request.json();
-
-        const existingUser = await User.findOne({email});
-        if(existingUser){
+        const { email, otp, newPassword, confirmNewPassword } = await request.json();
+        const user = await User.findOne({email});
+        if(!user){
             return NextResponse.json(
                 {
                     success:false,
-                    message:"User Already exist"
+                    message:"User not found. Sign up first"
                 },
-                {status: 401}
+                {status: 404}
             )
         }
 
-        if( password !== confirmPassword){
+        if(newPassword !== confirmNewPassword){
             return NextResponse.json(
                 {
                     success:false,
@@ -54,30 +53,28 @@ export async function POST(request: NextRequest){
 
         await OTP.findByIdAndDelete(response[0]._id);
 
-        const hashedPassword =  await bcrypt.hash(password, 10);
-        const encodedName = encodeURI(name);
-        const user = await User.create({
-            name: name,
-            email: email,
-            password: hashedPassword,
-            profilePicture: `https://api.dicebear.com/5.x/initials/svg?seed=${encodedName}`
-        });
+        const hashedPassword = await bcrypt.hash(newPassword, 10);
+
+        const updatedUser = await User.findOneAndUpdate(
+            {email},
+            {password: hashedPassword},
+            {new:true}
+        )
 
         return NextResponse.json(
             {
                 success:true,
-                user,
-                message:"User created successfully"
+                updatedUser,
+                message:'Password updated successfully'
             },
             {status: 200}
         )
-
     } catch (error) {
-        console.log("Error while creating user --> ", error);
+        console.log("Error while updating password --> ", error);
         return Response.json(
             {
                 success:false,
-                message:"Error while signing up"
+                message:"Error while updating password"
             },
             {status:500}
         )

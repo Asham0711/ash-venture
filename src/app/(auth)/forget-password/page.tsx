@@ -1,4 +1,4 @@
-import OtpForm from '@/components/Auth/OTPForm'
+import ResetOtpForm from '@/components/Auth/ForgetForm'
 import HighlightText from '@/components/HighlightText'
 import { Spotlight } from '@/components/ui/Spotlight'
 import React from 'react'
@@ -11,10 +11,10 @@ const VerifyPage = () => {
             fill="#E88DEA"
         />
         <div className='flex flex-col justify-center items-center gap-5'>
-            <h1 className='md:text-5xl text-4xl font-bold'><HighlightText text='Verify Email' /></h1>
-            <p className='md:text-xl text-lg'>A verification code has been sent to you. <br />Enter the code below</p>
+            <h1 className='md:text-5xl text-4xl font-bold'><HighlightText text='Reset your password' /></h1>
+            <p className='md:text-xl text-lg md:w-6/12 w-11/12 mx-auto text-center'>Forgot your Password? Don&apos;t worry, Enter your registered email address and we will send an OTP to verify your account then you can reset your password</p>
         </div>
-        <OtpForm/>
+        <ResetOtpForm />
     </div>
   )
 }

@@ -69,7 +69,7 @@ const OtpForm = () => {
     }
     return (
         <div className="flex justify-center items-center">
-            <div className="w-full max-w-md p-8 space-y-4 rounded-lg shadow-md">
+            <div className="w-full md:w-5/12 p-8 space-y-4 rounded-lg shadow-md">
                 <Form {...form}>
                     <form onSubmit={form.handleSubmit(onSubmit)} className="md:space-y-6 space-y-10">
                         <FormField
