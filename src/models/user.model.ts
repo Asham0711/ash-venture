@@ -12,7 +12,7 @@ interface IUser extends Document{
 const UserSchema : Schema<IUser> = new mongoose.Schema({
     name: { type: String, required: true },
     email: { type: String, required: true, unique: true },
-    password: { type: String, required: true },
+    password: { type: String },
     profilePicture: { type: String },
     trips: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Trip' }],
     googleId: { type: String, unique: true, sparse: true }, // Google OAuth ID
