@@ -21,6 +21,12 @@ import last1 from '@/assets/last_section/last1.png'
 import last2 from '@/assets/last_section/last2.png'
 import last3 from '@/assets/last_section/last3.png'
 
+//help page
+import setting from '@/assets/help_page/setting.png'
+import privacy from  '@/assets/help_page/privacy.png'
+import faq from '@/assets/help_page/faq.png'
+import troubleshoot from '@/assets/help_page/troubleshoot.png'
+
 
 
 
@@ -148,5 +154,32 @@ export const missionData = [
         title:'Exploration',
         description:'Fostering a sense of wonder and inspiring curiosity, our mission is to ignite a passion for discovering, exploring, and embracing new destinations worldwide.',
         link:'/about-us'
+    }
+]
+
+export const helpData = [
+    {
+        link: '/setting',
+        image: setting,
+        title: 'Settings',
+        description: 'Access and adjust your account preferences, notification settings, and personal information to enhance your user experience'
+    },
+    {
+        link: '/privacy-policy',
+        image: privacy,
+        title: 'Privacy & Security',
+        description: 'Discover how we protect your data and learn about our privacy policies to ensure your information stays safe.'
+    },
+    {
+        link: '/faq',
+        image: faq,
+        title: 'FAQs',
+        description: 'Browse our comprehensive list of frequently asked questions to find quick answers to common inquiries and concerns'
+    },
+    {
+        link: '/troubleshoot',
+        image: troubleshoot,
+        title: 'Troubleshoot',
+        description: 'Explore our troubleshooting resources to resolve common issues and ensure a smooth experience on our platform.'
     }
 ]

@@ -1,9 +1,9 @@
 'use client'
 import Image from 'next/image'
 import React from 'react'
-import hero from '@/assets/AboutPage/hero.jpg'
-import founding from '@/assets/AboutPage/founding.jpg'
-import car from "@/assets/AboutPage/car.jpg";
+import hero from '@/assets/about_page/hero.jpg'
+import founding from '@/assets/about_page/founding.jpg'
+import car from "@/assets/about_page/car.jpg";
 import HighlightText from '@/components/HighlightText'
 import { Button } from '@/components/ui/moving-border'
 import { useRouter } from 'next/navigation'

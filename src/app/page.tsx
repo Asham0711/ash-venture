@@ -5,11 +5,11 @@ import man from '@/assets/man.png'
 import HighlightText from "@/components/HighlightText";
 import { IoCall } from "react-icons/io5";
 import { useRouter } from "next/navigation";
-import FeatureCard from "@/components/Home Page/FeatureCard";
+import FeatureCard from "@/components/HomePage/FeatureCard";
 import { destinationData, featureData, homeLastData } from "@/data";
 import { InfiniteMovingCards } from "@/components/ui/infinite-moving-cards";
 import { Button } from "@/components/ui/moving-border";
-import LastCard from "@/components/Home Page/LastCard";
+import LastCard from "@/components/HomePage/LastCard";
 
 export default function Home() {
   const router = useRouter();
