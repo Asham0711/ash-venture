@@ -12,7 +12,7 @@ const FaqPage = () => {
     };
     return (
         <div className="max-w-screen min-h-screen container mx-auto overflow-x-hidden">
-            <div className='w-full bg-[#343E4E] md:px-6 px-2 py-10 flex justify-center items-center flex-col gap-4'>
+            <div className='w-full mt-1 bg-[#343E4E] md:px-6 px-2 py-10 flex justify-center items-center flex-col gap-4'>
                 <h1 className='text-3xl md:text-4xl font-semibold text-center'>Have <HighlightText text='Questions' />? We&apos;ve Got Answers</h1>
                 <p className='md:text-xl text-lg text-center md:w-9/12 mx-auto'>From planning your trip to making the most of every adventure, find clear answers to all your queries. Your journey starts here.</p>
             </div>   

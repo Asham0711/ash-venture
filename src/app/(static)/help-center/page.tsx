@@ -10,14 +10,14 @@ const HelpPage = () => {
   return (
     <div className="max-w-screen min-h-screen container mx-auto overflow-x-hidden">
         {/* Hero Section  */}
-        <div className="relative">
+        <div className="relative mt-1">
             <Image
                 src={hero}
                 alt="Hero"
                 className="md:h-[560px] h-[220px] w-96 mx-auto object-fit mt-1"
             />
             <div className="absolute inset-0 bg-gray-700 bg-opacity-40"></div>
-            <div className="absolute inset-0 flex flex-col items-center justify-center z-[50] text-white text-center">
+            <div className="absolute inset-0 flex flex-col items-center justify-center text-white text-center">
                 <p className="md:text-5xl text-xl font-bold">
                     How Can We Help You?
                 </p>

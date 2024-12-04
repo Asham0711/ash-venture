@@ -1,12 +1,12 @@
 'use client'
 import Image from 'next/image'
 import React from 'react'
-import hero from '@/assets/contactPage/contact_hero.webp'
+import hero from '@/assets/contact_page/contact_hero.webp'
 import HighlightText from '@/components/HighlightText'
 import Social from '@/components/ContactPage/Social'
 import BasicContacts from '@/components/ContactPage/BasicContacts'
 import ContactForm from '@/components/ContactPage/ContactForm'
-import map from '@/assets/contactPage/map.jpg'
+import map from '@/assets/contact_page/map.jpg'
 import { BackgroundGradient } from '@/components/ui/background-gradient'
 
 const ContactPage = () => {
@@ -20,7 +20,7 @@ const ContactPage = () => {
           className="md:h-[560px] h-[220px] object-fit mt-1"
         />
         <div className="absolute inset-0 bg-gray-700 bg-opacity-40"></div>
-        <div className="absolute inset-0 flex flex-col items-center justify-center z-[50] text-white text-center">
+        <div className="absolute inset-0 flex flex-col items-center justify-center text-white text-center">
           <p className="md:text-5xl text-xl font-bold">
             Let’s Make Your <HighlightText text="Journey Unforgettable" /> <br />
             Reach Out to Us!

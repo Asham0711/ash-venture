@@ -25,9 +25,9 @@ export default function Home() {
         <Image
           src={man}
           alt="Man"
-          className="absolute z-[50] top-0 h-full w-32 md:w-80"
+          className="absolute top-0 h-full w-32 md:w-80"
         />
-        <div className="absolute right-2 sm:right-16 md:right-10 bottom-2 sm:bottom-20 md:bottom-12 z-[50] text-left">
+        <div className="absolute right-2 sm:right-16 md:right-10 bottom-2 sm:bottom-20 md:bottom-12 text-left">
           <p className="text-lg sm:text-5xl md:text-6xl text-black font-bold">
             A <HighlightText text="Trip Planner" />
             <br /> for everyone...

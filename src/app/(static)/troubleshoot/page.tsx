@@ -5,7 +5,7 @@ import React from 'react'
 const TroubleShootPage = () => {
   return (
     <div className="max-w-screen min-h-screen container mx-auto overflow-x-hidden">
-        <div className='w-full bg-[#343E4E] md:px-6 px-2 py-10 flex justify-center items-center flex-col gap-4'>
+        <div className='w-full mt-1 bg-[#343E4E] md:px-6 px-2 py-10 flex justify-center items-center flex-col gap-4'>
             <h1 className='text-3xl md:text-4xl font-semibold text-center'><HighlightText text='Troubleshooting' /> Assistance</h1>
             <p className='md:text-xl text-lg text-center'>Find solutions to common issues and get back to planning your dream trip!</p>
         </div>

@@ -23,7 +23,7 @@ const AboutPage = () => {
           className='md:h-[560px] h-[220px] object-fit mt-1'
         />
         <div className="absolute inset-0 bg-gray-800 bg-opacity-60"></div>
-        <p className='absolute z-[50] md:text-5xl font-bold md:top-60 md:right-60 top-20 right-20'>Transforming Travel Planning into <br />Effortless, <HighlightText text='Memorable Adventures.' /></p>
+        <p className='absolute md:text-5xl font-bold md:top-60 md:right-60 top-20 right-20'>Transforming Travel Planning into <br />Effortless, <HighlightText text='Memorable Adventures.' /></p>
       </div>
       {/* Semi Hero Section  */}
       <div className="max-w-screen container mx-auto p-4 overflow-x-hidden mt-4">
