@@ -44,7 +44,7 @@ export async function POST(request: NextRequest){
         
     } catch (error) {
         console.log("Error while sending otp --> ", error);
-        return Response.json(
+        return NextResponse.json(
             {
                 success:false,
                 message:"Error while sending otp"

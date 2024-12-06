@@ -50,7 +50,7 @@ const MobileNavbar = () => {
                         {session ? (
                             <>
                                 <li>
-                                    <Link href='/my-profile' onClick={handleLinkClick} className='text-xl'>My Profile</Link>
+                                    <Link href='/settings' onClick={handleLinkClick} className='text-xl'>Settings</Link>
                                     <div className='bg-white h-0.5 mt-3'></div>
                                 </li>
                                 <li>
@@ -88,10 +88,6 @@ const MobileNavbar = () => {
                         </li>
                         <li>
                             <Link href='/create-trip' onClick={handleLinkClick} className='text-xl'>Create Trip</Link>
-                            <div className='bg-white h-0.5 mt-3'></div>
-                        </li>
-                        <li>
-                            <Link href='/settings' onClick={handleLinkClick} className='text-xl'>Settings</Link>
                             <div className='bg-white h-0.5 mt-3'></div>
                         </li>
                         <li>

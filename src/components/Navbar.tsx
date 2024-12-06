@@ -6,9 +6,8 @@ import Link from 'next/link';
 import profile from '@/assets/profile.png'
 import { usePathname, useRouter } from 'next/navigation';
 import { useSession, signOut } from 'next-auth/react';
-import { IoIosArrowDown, IoIosArrowUp } from 'react-icons/io';
+import { IoIosArrowDown, IoIosArrowUp, IoMdSettings } from 'react-icons/io';
 import { TbLogout } from 'react-icons/tb';
-import { CgProfile } from "react-icons/cg";
 
 const navLink = [
     { title: 'Home', path: '/' },
@@ -73,11 +72,6 @@ const Navbar = () => {
                         {dropdownOpen && (
                             <ul className='absolute right-0 top-10 bg-[#161d29] px-8 py-4 rounded shadow-lg w-[200px] space-y-4'>
                                 <li className='hover:text-[#E88DEA]'>
-                                    <Link href='/settings' onClick={handleLinkClick}>
-                                        Settings
-                                    </Link>
-                                </li>
-                                <li className='hover:text-[#E88DEA]'>
                                     <Link href='/faq' onClick={handleLinkClick}>
                                         FAQ
                                     </Link>
@@ -125,13 +119,13 @@ const Navbar = () => {
                                     <li>
                                         <button
                                             onClick={() => {
-                                                router.push('/my-profile')
+                                                router.push('/settings')
                                                 setProfileDropdownOpen(!profileDropdownOpen);
                                             }}
                                             className='flex justify-center items-center gap-2 w-full px-4 py-2 text-white'
                                         >
-                                            <CgProfile />
-                                            Profile
+                                            <IoMdSettings />
+                                            Settings
                                         </button>
                                     </li>
                                     <li>
