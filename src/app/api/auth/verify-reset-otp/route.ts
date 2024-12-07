@@ -71,7 +71,7 @@ export async function POST(request: NextRequest){
         )
     } catch (error) {
         console.log("Error while updating password --> ", error);
-        return Response.json(
+        return NextResponse.json(
             {
                 success:false,
                 message:"Error while updating password"

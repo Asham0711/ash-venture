@@ -1,8 +1,8 @@
-export interface PasswordResetTemplateProps {
+export interface EmailResetTemplateProps {
   otp: string;
 }
 
-export const passwordResetTemplate = ({ otp }: PasswordResetTemplateProps): string =>{
+export const emailResetTemplate = ({ otp }: EmailResetTemplateProps): string =>{
     return `<!DOCTYPE html>
     <html>
     
@@ -70,13 +70,13 @@ export const passwordResetTemplate = ({ otp }: PasswordResetTemplateProps): stri
     <body>
         <div class="container">
             <img class="logo" src="https://i.postimg.cc/CLZK2XZy/health-risk-4-removebg-preview-1.png" alt="Health Risk Assesment">
-            <div class="message">Password Reset Request</div>
+            <div class="message">Email Reset Request</div>
             <div class="body">
                 <p>Dear User,</p>
-                <p>You have requested to reset your password. Use the following OTP to reset your password:</p>
+                <p>You have requested to reset your email. Use the following OTP to reset your password:</p>
                 <h2 class="highlight">${otp}</h2>
                 <p>This OTP is valid for 5 minute. Please use it promptly.</p>
-                <p>If you did not request a password reset, please ignore this email.</p>
+                <p>If you did not request a email reset, please ignore this email.</p>
             </div>
             <div class="support">
                 If you need further assistance, please contact us at

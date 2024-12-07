@@ -46,6 +46,7 @@ export const signUpTemplate = ({ otp }: SignUpTemplateProps): string => {
     </head>
     <body>
         <div class="container">
+            <img class="logo" src="https://i.postimg.cc/CLZK2XZy/health-risk-4-removebg-preview-1.png" alt="Ashventure">
             <div class="message">OTP Verification Email</div>
             <div class="body">
                 <p>Dear User,</p>

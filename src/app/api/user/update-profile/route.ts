@@ -18,7 +18,7 @@ export async function PUT(request: NextRequest) {
     }
     const userId = new mongoose.Types.ObjectId(_user._id);
     try {
-        const {name, email, phone} = await request.json();
+        const {name, phone} = await request.json();
 
         const user = await User.findById(userId);
         if(!user){
@@ -30,9 +30,6 @@ export async function PUT(request: NextRequest) {
 
         if(name){
             user.name = name;
-        }
-        if(email){
-            user.email = email;
         }
         if(phone){
             user.phone = phone;
