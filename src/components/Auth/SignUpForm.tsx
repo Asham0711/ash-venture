@@ -25,6 +25,7 @@ const SignUpForm = () => {
         defaultValues: {
             name:'',
             email:'',
+            phone:'',
             password:'',
             confirmPassword:''
         }
@@ -37,6 +38,7 @@ const SignUpForm = () => {
             console.log(response);
             localStorage.setItem('name', data.name);
             localStorage.setItem('email', data.email);
+            localStorage.setItem('phone', data.phone);
             localStorage.setItem('password', data.password);
             localStorage.setItem('confirmPassword', data.confirmPassword);
 
@@ -94,6 +96,17 @@ const SignUpForm = () => {
                                 <FormItem>
                                     <FormLabel className='text-xl'>Email</FormLabel>
                                     <Input {...field} name="email" placeholder="Enter your email" className='bg-[#292C35]'/>
+                                    <FormMessage className="text-red-500 text-sm font-bold"/>
+                                </FormItem>
+                            )}
+                        />
+                        <FormField
+                            name="phone"
+                            control={form.control}
+                            render={({ field }) => (
+                                <FormItem>
+                                    <FormLabel className='text-xl'>Phone Number</FormLabel>
+                                    <Input {...field} name="phone" placeholder="Enter your phone number" className='bg-[#292C35]'/>
                                     <FormMessage className="text-red-500 text-sm font-bold"/>
                                 </FormItem>
                             )}

@@ -7,7 +7,7 @@ import OTP from "@/models/otp.model";
 export async function POST(request: NextRequest){
     await connectDB();
     try {
-        const { name, email, password, confirmPassword, otp } = await request.json();
+        const { name, email, phone, password, confirmPassword, otp } = await request.json();
 
         const existingUser = await User.findOne({email});
         if(existingUser){
@@ -59,6 +59,7 @@ export async function POST(request: NextRequest){
         const user = await User.create({
             name: name,
             email: email,
+            phone: phone,
             password: hashedPassword,
             profilePicture: `https://api.dicebear.com/5.x/initials/svg?seed=${encodedName}`
         });

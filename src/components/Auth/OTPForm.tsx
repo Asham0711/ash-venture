@@ -26,11 +26,13 @@ const OtpForm = () => {
         try {
             const name =  localStorage.getItem('name')
             const email = localStorage.getItem('email')
+            const phone = localStorage.getItem('phone')
             const password = localStorage.getItem('password')
             const confirmPassword = localStorage.getItem('confirmPassword')
             const response = await axios.post('/api/auth/sign-up', {
                 name: name,
                 email: email,
+                phone: phone,
                 password: password,
                 confirmPassword: confirmPassword,
                 otp: data.otp
@@ -52,6 +54,7 @@ const OtpForm = () => {
 
             localStorage.removeItem('name')
             localStorage.removeItem('email')
+            localStorage.removeItem('phone')
             localStorage.removeItem('password')
             localStorage.removeItem('confirmPassword')
 
