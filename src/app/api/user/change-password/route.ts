@@ -45,7 +45,7 @@ export async function POST(request: NextRequest) {
 
         const hashedPassword = await bcrypt.hash(newPassword,10);
         await User.findByIdAndUpdate(
-            {userId},
+            userId,
             {password: hashedPassword},
             {new:true}
         )

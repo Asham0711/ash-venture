@@ -1,7 +1,9 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 'use client'
 import HighlightText from '@/components/HighlightText'
+import DeleteForm from '@/components/SettingsPage/DeleteForm'
 import EmailForm from '@/components/SettingsPage/EmailForm'
+import PasswordForm from '@/components/SettingsPage/PasswordForm'
 import Profile from '@/components/SettingsPage/Profile'
 import ProfileForm from '@/components/SettingsPage/ProfileForm'
 import { Spotlight } from '@/components/ui/Spotlight'
@@ -24,6 +26,10 @@ const SettingsPage = () => {
             <ProfileForm />
             {/* Email Update */}
             <EmailForm />
+            {/* Password Change */}
+            <PasswordForm />
+            {/* Delete User */}
+            <DeleteForm />
         </div>
     )
 }

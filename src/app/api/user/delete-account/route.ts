@@ -31,7 +31,7 @@ export async function DELETE(request: NextRequest){
 
         const userTrips = await Trip.deleteMany({ _id: { $in: user.trips } });
 
-        await user.delete();
+        await User.findByIdAndDelete(userId);
 
         return NextResponse.json(
             {success: true, message: 'User deleted successfully', details: { tripsDeleted: userTrips.deletedCount }},

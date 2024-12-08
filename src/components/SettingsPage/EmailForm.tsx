@@ -96,7 +96,7 @@ const EmailForm = () => {
     return (
         <div className="flex flex-col justify-center items-center md:w-9/12 w-11/12 mx-auto bg-[#343E4E] px-5 py-6 rounded-3xl mt-16">
             <h1 className="text-3xl">Email Information</h1>
-            <div className="w-full px-8 py-4 space-y-4 rounded-lg">
+            <div className="w-full md:px-8 py-4 space-y-4 rounded-lg">
                 <Form {...form}>
                     <form onSubmit={form.handleSubmit(onSubmit)} className="md:space-y-6 space-y-10">
                         <FormField
