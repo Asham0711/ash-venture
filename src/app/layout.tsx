@@ -2,10 +2,11 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
-// import Footer from "@/components/Footer";
 import { Toaster } from "@/components/ui/toaster"
 import AuthProvider from "@/context/AuthProvider";
 import MobileNavbar from "@/components/MobileNavbar";
+import Footer from "@/components/Footer";
+import MobileFooter from "@/components/MobileFooter";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -41,7 +42,12 @@ export default function RootLayout({
             <MobileNavbar />
           </div>
           {children}
-          {/* <Footer /> */}
+          <div className='hidden md:block'>
+            <Footer />
+          </div>
+          <div className='block md:hidden'>
+            <MobileFooter />
+          </div>
           <Toaster/>
         </body>
       </AuthProvider>

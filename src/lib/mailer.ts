@@ -14,7 +14,7 @@ export async function sendVerificationEmail( email:string, title:string, body: s
         });
 
         const mailOptions = {
-            from: `"AshMessage | Md Asham Imad" <${process.env.MAIL_USER}>`, // sender address
+            from: `"AshVenture | Md Asham Imad" <${process.env.MAIL_USER}>`, // sender address
             to: email,
             subject: title,
             html: body

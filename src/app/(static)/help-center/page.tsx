@@ -28,7 +28,7 @@ const HelpPage = () => {
         </div>
         <div className='flex flex-col justify-center items-center gap-4 md:py-5 py-3 md:px-0 px-5 mb-5'>
             <h1 className='text-center text-2xl mt-6 font-semibold'>Find your <HighlightText text='Answers' /></h1>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-8 justify-center md:p-4 w-9/12 mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-8 justify-center md:p-4 md:w-9/12 w-11/12 mx-auto">
                 {helpData.map((card, index) => (
                     <HelpCard
                         key={index}
