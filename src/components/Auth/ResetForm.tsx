@@ -141,7 +141,7 @@ const ResetForm = () => {
                                     </FormItem>
                                 )}
                             />
-                        <button type="submit" className='w-full py-2 rounded-xl bg-[#E88DEA] text-white text-xl flex justify-center items-center gap-3' disabled={isSubmitting}>
+                        <button type="submit" className='w-full py-2 rounded-xl bg-[#F74270] text-white text-xl flex justify-center items-center gap-3' disabled={isSubmitting}>
                             {isSubmitting ? (
                                 <>
                                     <Loader2 className="mr-2 h-4 w-4 animate-spin" />

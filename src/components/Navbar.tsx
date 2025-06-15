@@ -49,8 +49,8 @@ const Navbar = () => {
                             <Link
                                 href={link.path}
                                 className={`${
-                                    pathname === link.path ? 'text-[#E88DEA]' : 'text-white'
-                                } hover:text-[#E88DEA] transition-all duration-300`}
+                                    pathname === link.path ? 'text-[#F74270]' : 'text-white'
+                                } hover:text-[#F74270] transition-all duration-300`}
                             >
                                 {link.title}
                             </Link>
@@ -60,7 +60,7 @@ const Navbar = () => {
                     <li className='relative z-[100]'>
                         <button
                             onClick={() => setDropdownOpen(!dropdownOpen)}
-                            className='flex justify-center items-center hover:text-[#E88DEA] transition-all duration-300'
+                            className='flex justify-center items-center hover:text-[#F74270] transition-all duration-300'
                         >
                             Others{' '}
                             {dropdownOpen ? (
@@ -71,22 +71,22 @@ const Navbar = () => {
                         </button>
                         {dropdownOpen && (
                             <ul className='absolute right-0 top-10 bg-[#161d29] px-8 py-4 rounded shadow-lg w-[200px] space-y-4'>
-                                <li className='hover:text-[#E88DEA]'>
+                                <li className='hover:text-[#F74270]'>
                                     <Link href='/faq' onClick={handleLinkClick}>
                                         FAQ
                                     </Link>
                                 </li>
-                                <li className='hover:text-[#E88DEA]'>
+                                <li className='hover:text-[#F74270]'>
                                     <Link href='/troubleshoot' onClick={handleLinkClick}>
                                         Troubleshoot
                                     </Link>
                                 </li>
-                                <li className='hover:text-[#E88DEA]'>
+                                <li className='hover:text-[#F74270]'>
                                     <Link href='/privacy-policy' onClick={handleLinkClick}>
                                         Privacy Policy
                                     </Link>
                                 </li>
-                                <li className='hover:text-[#E88DEA]'>
+                                <li className='hover:text-[#F74270]'>
                                     <Link href='/help-center' onClick={handleLinkClick}>
                                         Help Center
                                     </Link>
@@ -103,8 +103,8 @@ const Navbar = () => {
                         <div className='relative'>
                             <div className='flex items-center justify-center gap-8'>
                                 <Link href={'/my-trips'} className={`${
-                                        pathname === '/my-trips' ? 'text-[#E88DEA]' : 'text-white'
-                                    } hover:text-[#E88DEA] transition-all duration-300`}>My Trips</Link>
+                                        pathname === '/my-trips' ? 'text-[#F74270]' : 'text-white'
+                                    } hover:text-[#F74270] transition-all duration-300`}>My Trips</Link>
                                 <Image
                                     src={profile} // Use session user image or a default one
                                     alt="Profile Picture"
@@ -150,7 +150,7 @@ const Navbar = () => {
                             Login
                         </button>
                         <button
-                            className='bg-[#E88DEA] px-4 py-2 rounded-xl'
+                            className='bg-[#F74270] px-4 py-2 rounded-xl'
                             onClick={() => router.push('/sign-up')}
                         >
                             Signup
@@ -166,13 +166,13 @@ const Navbar = () => {
                         </h2>
                         <div className="flex justify-between mt-4">
                             <button
-                                className="bg-[#E88DEA] px-8 py-2 rounded-xl"
+                                className="bg-[#F74270] px-8 py-2 rounded-xl"
                                 onClick={()=> signOut()}
                             >
                                 Logout
                             </button>
                             <button
-                                className="py-2 px-8 rounded-xl border-2 border-[#E88DEA]"
+                                className="py-2 px-8 rounded-xl border-2 border-[#F74270]"
                                 onClick={() => setShowLogoutModal(false)}
                             >
                                 Cancel

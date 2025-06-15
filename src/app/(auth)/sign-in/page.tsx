@@ -12,7 +12,7 @@ const SignInPage = () => {
     <div className="max-w-screen min-h-screen container mx-auto overflow-x-hidden">
         <Spotlight
             className="left-0 md:left-60 md:top-56 top-0"
-            fill="#E88DEA"
+            fill="#f74270"
         />
         <div className='w-full flex justify-center items-center md:py-20 py-40'>
             <div className='md:w-[60%] w-full'>

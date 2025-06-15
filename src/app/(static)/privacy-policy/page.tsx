@@ -9,7 +9,7 @@ const PrivacyPage = () => {
     <div className="max-w-screen min-h-screen container mx-auto overflow-x-hidden">
         <Spotlight
             className="left-0 md:left-60 md:top-56 top-0"
-            fill="#E88DEA"
+            fill="#F74270"
         />
         <h1 className="text-3xl md:text-4xl font-semibold text-center my-5">
           Your <HighlightText text='Privacy' />, Our Priority

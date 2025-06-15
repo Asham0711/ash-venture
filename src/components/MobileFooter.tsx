@@ -7,7 +7,7 @@ import FlipIcon from './ui/icon-flip';
 
 const MobileFooter = () => {
   return (
-    <div className="bg-gradient-to-r from-[#5F0FFF] via-[#A909FF] to-[#E88DEA] w-full text-[#000000] flex flex-col items-center py-5">
+    <div className="bg-gradient-to-r from-[#5F0FFF] via-[#A909FF] to-[#F74270] w-full text-[#000000] flex flex-col items-center py-5">
       {/* Logo Section */}
       <div className="flex flex-col items-center mb-4">
         <Image src={blackLogo} width={150} height={150} alt="Black logo" />

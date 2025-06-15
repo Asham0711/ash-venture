@@ -143,7 +143,7 @@ const FaqPage = () => {
                         {openQuestion === "q1-privacy" && (
                             <p className="ml-4">
                                 We use advanced encryption and secure servers to protect your data. Our privacy policy ensures that your information is never shared without your consent. <br />
-                                <strong>Tip:</strong> For more details you can visit <strong><Link href={'/privacy-policy'} className='text-[#E88DEA]'>Privacy Policy</Link></strong> page
+                                <strong>Tip:</strong> For more details you can visit <strong><Link href={'/privacy-policy'} className='text-[#F74270]'>Privacy Policy</Link></strong> page
                             </p>
                         )}
                     </div>
@@ -159,7 +159,7 @@ const FaqPage = () => {
                         {openQuestion === "q2-privacy" && (
                             <p className="ml-4">
                                 Yes, we use cookies to enhance your browsing experience and provide personalized recommendations. <br />
-                                <strong>Tip:</strong> Review our <strong><Link href={'/privacy-policy'} className='text-[#E88DEA]'>Cookie Policy</Link></strong> for a detailed breakdown of how we use cookies
+                                <strong>Tip:</strong> Review our <strong><Link href={'/privacy-policy'} className='text-[#F74270]'>Cookie Policy</Link></strong> for a detailed breakdown of how we use cookies
                             </p>
                         )}
                     </div>
@@ -194,7 +194,7 @@ const FaqPage = () => {
                         </button>
                         {openQuestion === "q2-technical" && (
                             <p className="ml-4">
-                                Head to <strong><Link href={'/help-center'} className='text-[#E88DEA]'>Help Center</Link></strong> &gt; Query Form and describe the issue in detail. Our team will work on resolving it as soon as possible. <br />
+                                Head to <strong><Link href={'/help-center'} className='text-[#F74270]'>Help Center</Link></strong> &gt; Query Form and describe the issue in detail. Our team will work on resolving it as soon as possible. <br />
                                 <strong>Tip:</strong> Write the issue in clear and crisp manner.
                             </p>
                         )}
@@ -214,7 +214,7 @@ const FaqPage = () => {
                         </button>
                         {openQuestion === "q1-contact" && (
                             <p className="ml-4">
-                                Our support team is available 24/7 through live chat and email. You can also submit a request via the <strong><Link href={'/contact-us'} className='text-[#E88DEA]'>Contact Us</Link></strong> section on our website.
+                                Our support team is available 24/7 through live chat and email. You can also submit a request via the <strong><Link href={'/contact-us'} className='text-[#F74270]'>Contact Us</Link></strong> section on our website.
                             </p>
                         )}
                     </div>
@@ -229,7 +229,7 @@ const FaqPage = () => {
                         </button>
                         {openQuestion === "q2-contact" && (
                             <p className="ml-4">
-                                Yes! Visit the Feedback section under <strong><Link href={'/contact-us'} className='text-[#E88DEA]'>Contact Us</Link></strong>, and let us know what you think. We value your opinions and use them to improve our platform. <br />
+                                Yes! Visit the Feedback section under <strong><Link href={'/contact-us'} className='text-[#F74270]'>Contact Us</Link></strong>, and let us know what you think. We value your opinions and use them to improve our platform. <br />
                                 <strong>Qoute:</strong> Your voice helps us create better travel experiences for everyone.
                             </p>
                         )}

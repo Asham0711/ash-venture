@@ -13,7 +13,7 @@ const SettingsPage = () => {
         <div className="max-w-screen min-h-screen container mx-auto overflow-x-hidden">
             <Spotlight
                 className="left-0 md:left-60 md:top-56 top-0"
-                fill="#E88DEA"
+                fill="#F74270"
             />
             {/* Hero */}
             <div className='w-full mt-1 md:px-6 px-2 py-10 flex justify-center items-center flex-col gap-4'>

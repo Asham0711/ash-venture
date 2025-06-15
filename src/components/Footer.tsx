@@ -7,7 +7,7 @@ import FlipIcon from './ui/icon-flip'
 
 const Footer = () => {
   return (
-    <div className='bg-gradient-to-r from-[#5F0FFF] via-[#A909FF] to-[#E88DEA] w-full text-[#000000] flex flex-col gap-4 justify-center items-center py-5'>
+    <div className='bg-gradient-to-r from-[#f74270] via-[#FBA1B7] to-[#e76988] w-full text-[#000000] flex flex-col gap-4 justify-center items-center py-5'>
         <div className='flex justify-between items-center w-11/12 mx-auto'>
             <div className='flex flex-col justify-center items-center p-5 w-[40%]'>
                 <Image 

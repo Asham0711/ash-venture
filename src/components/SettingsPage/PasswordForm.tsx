@@ -132,7 +132,7 @@ const PasswordForm = () => {
                             <button type="button" className='px-4 py-2 rounded-xl bg-[#161D29] text-white text-xl flex justify-center items-center gap-3' onClick={handleCancel}>
                                 Cancel
                             </button>
-                            <button type="submit" className='px-4 py-2 rounded-xl bg-[#E88DEA] text-white text-xl flex justify-center items-center gap-1' disabled={isSubmitting}>
+                            <button type="submit" className='px-4 py-2 rounded-xl bg-[#F74270] text-white text-xl flex justify-center items-center gap-1' disabled={isSubmitting}>
                                 {isSubmitting ? (
                                     <>
                                         <Loader2 className="mr-2 h-4 w-4 animate-spin" />

@@ -104,7 +104,7 @@ const SigninForm = () => {
                                 </FormItem>
                             )}
                         />
-                        <button type="submit" className='w-full py-2 rounded-xl bg-[#E88DEA] text-white text-xl flex justify-center items-center gap-3' disabled={isSubmitting}>
+                        <button type="submit" className='w-full py-2 rounded-xl bg-gradient-to-r from-[#f74270] via-[#FBA1B7] to-[#e76988] text-white text-xl flex justify-center items-center gap-3' disabled={isSubmitting}>
                             {isSubmitting ? (
                                 <>
                                 <Loader2 className="mr-2 h-4 w-4 animate-spin" />

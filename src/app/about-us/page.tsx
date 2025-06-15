@@ -34,7 +34,7 @@ const AboutPage = () => {
         <div className="flex justify-center items-center mt-5">
           <Button
             borderRadius="1.75rem"
-            className="bg-white dark:bg-[#E88DEA] text-black dark:text-white border-neutral-200 dark:border-slate-800 text-lg"
+            className="bg-white dark:bg-[#F74270] text-black dark:text-white border-neutral-200 dark:border-slate-800 text-lg"
             onClick={()=> router.push('/sign-up')}
           >
             Explore More
@@ -71,7 +71,7 @@ const AboutPage = () => {
         <h2 className="text-lg md:text-4xl font-semibold text-center mb-4">
           Our Mission and Values
         </h2>
-        <div className='bg-[#E88DEA] w-[10%] h-0.5 mx-auto mb-5'></div>
+        <div className='bg-[#F74270] w-[10%] h-0.5 mx-auto mb-5'></div>
         <p className="md:w-9/12 mx-auto text-center text-xs md:text-xl">We strive to be the go-to resource for travelers looking to curate their dream journeys. Every itinerary is carefully designed to give you a meaningful experience that reflects your interests and passions.</p>
         <h1 className='text-center text-sm md:text-2xl mt-6'><HighlightText text='Core Values' /></h1>
         <div className="max-w-5xl mx-auto px-8">
@@ -83,7 +83,7 @@ const AboutPage = () => {
         <h2 className="text-lg md:text-4xl font-semibold text-center mb-4">
           Our <HighlightText text='Promise' /> to You
         </h2>
-        <div className='bg-[#E88DEA] w-[10%] h-0.5 mx-auto mb-5'></div>
+        <div className='bg-[#F74270] w-[10%] h-0.5 mx-auto mb-5'></div>
         <p className="md:w-9/12 mx-auto text-center text-xs md:text-xl mb-5">We’re here to inspire and support every step of your journey, helping you explore the world with confidence and curiosity. Wherever you go, let us be your guide</p>
         <div className='w-9/12 mx-auto px-8 py-6 flex justify-center items-center'>
           <BackgroundGradient className="rounded-[22px]">

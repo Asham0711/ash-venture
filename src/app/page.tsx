@@ -39,13 +39,13 @@ export default function Home() {
           </p>
           <div className="w-full sm:w-9/12 mt-5 flex flex-wrap gap-4 justify-start items-center">
             <button
-              className="bg-[#E88DEA] px-4 py-2 sm:px-6 sm:py-3 rounded-xl sm:rounded-2xl text-xs sm:text-xl"
+              className="bg-[#F74270] px-4 py-2 sm:px-6 sm:py-3 rounded-xl sm:rounded-2xl text-xs sm:text-xl"
               onClick={() => router.push('/sign-in')}
             >
               Get Started
             </button>
             <button
-              className="bg-[#FBE2FB] text-[#E88DEA] px-4 py-2 sm:px-6 sm:py-3 rounded-xl sm:rounded-2xl font-bold text-xs sm:text-xl flex justify-center items-center gap-2"
+              className="bg-[#FBE2FB] text-[#F74270] px-4 py-2 sm:px-6 sm:py-3 rounded-xl sm:rounded-2xl font-bold text-xs sm:text-xl flex justify-center items-center gap-2"
               onClick={() => router.push('/contact-us')}
             >
               <IoCall />
@@ -59,7 +59,7 @@ export default function Home() {
         <h2 className="text-lg md:text-4xl font-semibold text-center mb-4">
           <HighlightText text="Features" /> to replace all your other tools
         </h2>
-        <div className='bg-[#E88DEA] w-[10%] h-0.5 mx-auto md:mb-4'></div>
+        <div className='bg-[#F74270] w-[10%] h-0.5 mx-auto md:mb-4'></div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-1 md:gap-4 justify-center md:p-4 w-11/12 mx-auto">
           {featureData.map((card, index) => (
             <FeatureCard
@@ -76,7 +76,7 @@ export default function Home() {
         <h2 className="text-lg md:text-4xl font-semibold text-center my-5">
           Discover your next <HighlightText text="Favourite Destination" />
         </h2>
-        <div className='bg-[#E88DEA] w-[10%] h-0.5 mx-auto mb-5'></div>
+        <div className='bg-[#F74270] w-[10%] h-0.5 mx-auto mb-5'></div>
         <p className="md:w-9/12 mx-auto text-center text-xs md:text-xl">From breathtaking landscapes to vibrant cities, let us guide you to unforgettable destinations. Discover, plan, and explore your next favorite spot with personalized itineraries crafted just for you.</p>
         <div className="py-10 rounded-md flex flex-col items-center justify-center relative overflow-hidden">
           <InfiniteMovingCards
@@ -89,7 +89,7 @@ export default function Home() {
         <div className="flex justify-center items-center my-5">
           <Button
             borderRadius="1.75rem"
-            className="bg-white dark:bg-[#E88DEA] text-black dark:text-white border-neutral-200 dark:border-slate-800 text-lg"
+            className="bg-white dark:bg-[#F74270] text-black dark:text-white border-neutral-200 dark:border-slate-800 text-lg"
             onClick={()=> router.push('/sign-up')}
           >
             Explore More
@@ -101,7 +101,7 @@ export default function Home() {
         <h2 className="text-lg md:text-4xl font-semibold text-center mb-4">
           For every kind of trip and every <HighlightText text="destination" />
         </h2>
-        <div className='bg-[#E88DEA] w-[10%] h-0.5 mx-auto mb-5'></div>
+        <div className='bg-[#F74270] w-[10%] h-0.5 mx-auto mb-5'></div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-1 md:gap-4 justify-center md:p-4 w-11/12 mx-auto">
           {homeLastData.map((card, index) => (
             <LastCard

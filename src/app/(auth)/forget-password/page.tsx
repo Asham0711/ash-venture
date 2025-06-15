@@ -8,7 +8,7 @@ const VerifyPage = () => {
     <div className="max-w-screen min-h-screen container mx-auto overflow-x-hidden md:py-20 py-40">
         <Spotlight
             className="left-0 md:left-60 md:top-56 top-0"
-            fill="#E88DEA"
+            fill="#F74270"
         />
         <div className='flex flex-col justify-center items-center gap-5'>
             <h1 className='md:text-5xl text-4xl font-bold'><HighlightText text='Reset your password' /></h1>

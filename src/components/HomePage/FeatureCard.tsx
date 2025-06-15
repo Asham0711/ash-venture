@@ -24,7 +24,7 @@ const FeatureCard: React.FC<CardProps> = ({ title, description, imageUrl }) => {
       </div>
 
       {/* Title */}
-      <h2 className="text-xl font-bold text-[#E88DEA] mb-2 text-center">
+      <h2 className="text-xl font-bold text-[#F74270] mb-2 text-center">
         {title}
       </h2>
 

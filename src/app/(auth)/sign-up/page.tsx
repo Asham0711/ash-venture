@@ -12,7 +12,7 @@ const SignUpPage = () => {
     <div className="max-w-screen min-h-screen container mx-auto overflow-x-hidden md:py-10 py-28">
         <Spotlight
             className="left-0 md:left-60 md:top-56 top-0"
-            fill="#E88DEA"
+            fill="#F74270"
         />
         <div className='flex flex-col justify-center items-center md:gap-5 gap-3'>
             <h1 className='md:text-4xl text-2xl font-bold'>Join the millions creating their <br /><HighlightText text='Itenarary' /> for the next trip</h1>

@@ -12,7 +12,7 @@ const ErrorPage = () => {
         <div className="max-w-screen min-h-screen container mx-auto overflow-x-hidden flex flex-col md:gap-5 gap-8 justify-center items-center">
             <Spotlight
                 className="left-0 md:left-60 md:top-56 top-0"
-                fill="#E88DEA"
+                fill="#F74270"
             />
             <div className='flex md:flex-row flex-col md:gap-5 gap-3 justify-center items-center md:w-6/12 w-10/12 mx-auto'>
                 <div>
@@ -29,7 +29,7 @@ const ErrorPage = () => {
             </div>
             <div>
                 <button 
-                    className='flex justify-center items-center gap-3 px-4 py-2 bg-[#E88DEA] rounded-xl'
+                    className='flex justify-center items-center gap-3 px-4 py-2 bg-[#F74270] rounded-xl'
                     onClick={()=> router.push('/')}
                 >
                     <FaArrowLeftLong />

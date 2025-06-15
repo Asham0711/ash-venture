@@ -117,13 +117,13 @@ const MobileNavbar = () => {
                         </h2>
                         <div className="flex justify-between mt-4">
                             <button
-                                className="bg-[#E88DEA] px-8 py-2 rounded-xl"
+                                className="bg-[#F74270] px-8 py-2 rounded-xl"
                                 onClick={()=> signOut()}
                             >
                                 Logout
                             </button>
                             <button
-                                className="py-2 px-8 rounded-xl border-2 border-[#E88DEA]"
+                                className="py-2 px-8 rounded-xl border-2 border-[#F74270]"
                                 onClick={() => setShowLogoutModal(false)}
                             >
                                 Cancel
